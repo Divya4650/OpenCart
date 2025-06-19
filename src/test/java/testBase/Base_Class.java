@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -22,10 +23,12 @@ public class Base_Class {
 	public Logger logger; //for log4j
 	public Properties p;
 	
-	@BeforeClass(groups= {"Sanity","Regression","Master"})
-	@Parameters({"os","browser"})
+	@BeforeClass//(groups= {"Sanity","Regression","Master"})
+	//@Parameters({"os","browser"})
 	
-	public void setup(String os,String brows) throws IOException 
+	//public void setup(String os,String brows) throws IOException 
+	public void setup() throws IOException 
+
 	
 	{
 		//loading config.prop file
@@ -36,14 +39,14 @@ public class Base_Class {
 	 logger=LogManager.getLogger(this.getClass());
 		
 	 	
-		//driver=new ChromeDriver();
-	 switch(brows.toLowerCase()) 
+		driver=new ChromeDriver();
+	/* switch(brows.toLowerCase()) 
 	 {
 	 case "chrome" : driver=new ChromeDriver(); break;
 	 case "edge" : driver=new EdgeDriver(); break;
 	 case "firefox" : driver=new FirefoxDriver(); break;
 	 default : System.out.println("Invalid browser name.."); return;
-	 }
+	 }*/
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
@@ -52,9 +55,14 @@ public class Base_Class {
 		driver.manage().window().maximize();
 	}
 	
-	@AfterClass (groups= {"Sanity","Regression","Master"})
+	@AfterClass //(groups= {"Sanity","Regression","Master"})
 	public void close() {
 		driver.quit();
+	}
+	
+	public void Scroll() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, 500);");
 	}
 	
 	//to generate random strings
