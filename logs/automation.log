@@ -1029,3 +1029,32 @@ java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+21:30:22:860 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kdivyala\eclipse-workspace\OpenCart\testcase004.xml
+
+21:30:31:097 [main] INFO  testCases.TC004_CartPage - ***Starting TC004 ***
+21:30:40:322 [main] ERROR testCases.TC004_CartPage - Test failed
+21:33:15:179 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kdivyala\eclipse-workspace\OpenCart\testcase004.xml
+
+21:33:19:117 [main] INFO  testCases.TC002_LoginTest - *** starting TC002 login test***
+21:33:20:864 [main] INFO  testCases.TC002_LoginTest - *** finished TC002 login test***
+21:33:23:713 [main] INFO  testCases.TC003_AddToCart - ***Starting TC003 ***
+21:33:27:563 [main] INFO  testCases.TC004_CartPage - ***Starting TC004 ***
+21:33:38:241 [main] ERROR testCases.TC004_CartPage - Test failed
+21:36:14:095 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kdivyala\eclipse-workspace\OpenCart\testcase004.xml
+
+21:36:18:328 [main] INFO  testCases.TC002_LoginTest - *** starting TC002 login test***
+21:36:20:011 [main] INFO  testCases.TC002_LoginTest - *** finished TC002 login test***
+21:36:23:175 [main] INFO  testCases.TC003_AddToCart - ***Starting TC003 ***
+21:36:26:943 [main] INFO  testCases.TC004_CartPage - ***Starting TC004 ***
+21:36:35:456 [main] ERROR testCases.TC004_CartPage - Test failed
+22:07:25:666 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kdivyala\eclipse-workspace\OpenCart\testcase004.xml
+
+22:07:30:235 [main] INFO  testCases.TC002_LoginTest - *** starting TC002 login test***
+22:07:31:759 [main] INFO  testCases.TC002_LoginTest - *** finished TC002 login test***
+22:07:35:668 [main] INFO  testCases.TC003_AddToCart - ***Starting TC003 ***
+22:07:39:607 [main] INFO  testCases.TC004_CartPage - ***Starting TC004 ***
+22:07:45:927 [main] ERROR testCases.TC004_CartPage - Test failed

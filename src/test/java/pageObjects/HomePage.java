@@ -23,6 +23,9 @@ WebElement Register;
 @FindBy(xpath="//*[text()='Login']")
 WebElement loginbutton;
 
+@FindBy (linkText="Shopping Cart")
+WebElement cartIcon;
+
 public void clickMyAccount() {
 	MyAccount.click();
 }
@@ -33,5 +36,9 @@ public void clickRegister() {
 
 public void clickLogin() {
 	loginbutton.click();
+}
+
+public void GoToCart() {
+	cartIcon.click();
 }
 }

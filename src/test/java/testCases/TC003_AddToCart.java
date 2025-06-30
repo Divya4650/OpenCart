@@ -7,7 +7,7 @@ import pageObjects.Products;
 import testBase.Base_Class;
 
 public class TC003_AddToCart extends Base_Class{
-	@Test
+	@Test(groups = "cartSetup")
 	public void AddCart() {
 		try {
 			logger.info("***Starting TC003 ***");
